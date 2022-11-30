@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
 import { Contact } from './pages/Contact';
@@ -12,6 +12,7 @@ function App() {
         <Header />
         <Routes>
                         <Route path='/' element={<Home/>}/>
+                <Route path='*' element={<Navigate to={'/'} />} />
                         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       </BrowserRouter>
