@@ -11,10 +11,9 @@ function App() {
       <BrowserRouter className='overflow-x-none'>
         <Header />
         <Routes>
-                        <Route path='/' element={<Home/>}/>
-                <Route path='*' element={<Navigate to={'/'} />} />
-                        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
